@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <Scene name="App" :autoStart="true">
+    <Rectangle
+      :x="100"
+      :width="100"
+      :height="100"
+      :origin="0"
+      :fillColor="0x888888"
+    />
+  </Scene>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { Rectangle, Scene } from 'phavuer'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
+    Scene,
+    Rectangle,
   },
 })
 </script>

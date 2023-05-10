@@ -47,3 +47,7 @@ https://ralacode.com/blog/post/vscode-prettier/
     'no-unreachable': 'error',
   },
 ```
+
+```
+npm install phavuer phaser
+```
